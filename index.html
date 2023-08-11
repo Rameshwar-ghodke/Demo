@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="./custom_style.css">
+</head>
+<body>
+    <h1>CSS- flex property use align the paege in html page with responsiveness</h1>
+    <div class="parent">
+        <div class="child">test</div>
+        <div class="child">test</div>
+        <div class="child">test</div>
+        <div class="child">test</div>
+        <div class="child">test</div>
+        <div class="child">test</div>
+        <div class="child">test</div>
+        <div class="child">test</div>
+        <div class="child">test</div>
+        <div class="child">test</div>
+        <div class="child">test</div>
+        <div class="child">test</div>
+    </div>
+
+        <!-- HTML code --> 
+   
+     <pre>
+        <!-- css for this -->
+        .parent{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .child{
+            position: relative;
+            background-color: aqua;
+            width:  calc(10px + 100px);
+            height: 100%;
+            margin-left:10px;
+            margin-top:10px;
+        }
+        
+        /* breakpoints */
+        @media (min-width:640px) {
+            .child{
+                width:  calc(10px + 180px);
+            }
+        }
+        
+        @media (min-width:940px) {
+            .child{
+                width:  calc(10px + 290px);
+            }
+        }
+    </pre>
+</body>
+</html>
